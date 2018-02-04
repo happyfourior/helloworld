@@ -18,5 +18,5 @@ MainWindow::~MainWindow()
 MainWindow::onHello()
 {
     QMessageBox::about(this,"qt for learn git","hello world\n"
-                                               "modify files for debug1");
+                                               "vision 1.0");
 }
