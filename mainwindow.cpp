@@ -19,6 +19,12 @@ MainWindow::MainWindow(QWidget *parent) :
 
     timer->start();
     ui->label_time->setText(QString(QTime::currentTime().toString("hh:mm:ss")));
+    qsrand(QTime::currentTime().msecsSinceStartOfDay());
+    QString filepath = path+ QString::number(qrand()%9)+".jpg";
+    QPixmap meinv(filepath);
+    meinv.scaled(ui->label_meinv->size());
+    ui->label_meinv->setPixmap(meinv);
+
 
     connect(ui->btn_hello,&QPushButton::clicked,this,&MainWindow::onHello);
     connect(ui->btn_hello,&QPushButton::clicked,this,&MainWindow::onHello);
@@ -37,9 +43,13 @@ void MainWindow::onHello()
 
 void MainWindow::onTimerout()
 {
+    static unsigned int i =0;
     ui->label_time->setText(QString(QTime::currentTime().toString("hh:mm:ss")));
-    QString filepath = path+ QString::number(qrand()%9)+".jpg";
-    QPixmap meinv(filepath);
-    meinv.scaled(ui->label_meinv->size());
-    ui->label_meinv->setPixmap(meinv);
+    if(i++%2)
+    {
+        QString filepath = path+ QString::number(qrand()%9)+".jpg";
+        QPixmap meinv(filepath);
+        meinv.scaled(ui->label_meinv->size());
+        ui->label_meinv->setPixmap(meinv);
+    }
 }
