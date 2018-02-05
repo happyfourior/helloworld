@@ -3,3 +3,4 @@ The first vision of print hello world. Click the button, then a messagebox with 
 caption "hello world" is shown immediately.
 modify source files for bug1.
 The mainwindow contains a calendar.
+The debug results can be shown in console by adotping QDebug class.

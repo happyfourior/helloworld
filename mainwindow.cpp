@@ -1,6 +1,9 @@
 #include "mainwindow.h"
 #include "ui_mainwindow.h"
 #include "QMessageBox"
+#include "QDebug"
+
+#define cout qDebug() << "[" << __FILE__ << "->" << __LINE__ << "]:"
 
 MainWindow::MainWindow(QWidget *parent) :
     QMainWindow(parent),
@@ -8,6 +11,7 @@ MainWindow::MainWindow(QWidget *parent) :
 {
     ui->setupUi(this);
     connect(ui->btn_hello,&QPushButton::clicked,this,&MainWindow::onHello);
+    cout << "hello world!";
 }
 
 MainWindow::~MainWindow()
