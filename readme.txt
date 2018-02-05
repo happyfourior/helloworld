@@ -4,3 +4,5 @@ caption "hello world" is shown immediately.
 modify source files for bug1.
 The mainwindow contains a calendar.
 The debug results can be shown in console by adotping QDebug class.
+The current time with format hh-mm-ss is shown and updated per second.
+A picture of beautiful girl is shown and updated per second.
