@@ -20,7 +20,7 @@ MainWindow::MainWindow(QWidget *parent) :
     timer->start();
     ui->label_time->setText(QString(QTime::currentTime().toString("hh:mm:ss")));
     qsrand(QTime::currentTime().msecsSinceStartOfDay());
-    QString filepath = path+ QString::number(qrand()%9)+".jpg";
+    QString filepath = path+ QString::number(qrand()%13)+".jpg";
     QPixmap meinv(filepath);
     meinv.scaled(ui->label_meinv->size());
     ui->label_meinv->setPixmap(meinv);
