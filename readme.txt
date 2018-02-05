@@ -3,3 +3,4 @@ The first vision of print hello world. Click the button, then a messagebox with 
 caption "hello world" is shown immediately.
 The mainwindow contains a calendar.
 The debug results can be shown in console by adotping QDebug class.
+The current time with format hh-mm-ss is shown and updated per second.
