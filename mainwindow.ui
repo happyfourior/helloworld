@@ -6,16 +6,28 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>400</width>
-    <height>327</height>
+    <width>412</width>
+    <height>303</height>
    </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>400</width>
+    <height>300</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>412</width>
+    <height>303</height>
+   </size>
   </property>
   <property name="windowTitle">
    <string>MainWindow</string>
   </property>
   <widget class="QWidget" name="centralWidget">
    <layout class="QGridLayout" name="gridLayout">
-    <item row="0" column="0">
+    <item row="0" column="0" colspan="2">
      <layout class="QHBoxLayout" name="horizontalLayout_2">
       <item>
        <spacer name="horizontalSpacer_2">
@@ -31,7 +43,7 @@
        </spacer>
       </item>
       <item>
-       <widget class="QLabel" name="label">
+       <widget class="QLabel" name="label_time">
         <property name="text">
          <string>TextLabel</string>
         </property>
@@ -44,7 +56,7 @@
         </property>
         <property name="sizeHint" stdset="0">
          <size>
-          <width>58</width>
+          <width>40</width>
           <height>20</height>
          </size>
         </property>
@@ -53,9 +65,28 @@
      </layout>
     </item>
     <item row="1" column="0">
+     <widget class="QLabel" name="label_meinv">
+      <property name="minimumSize">
+       <size>
+        <width>140</width>
+        <height>0</height>
+       </size>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="scaledContents">
+       <bool>true</bool>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="1">
      <widget class="QCalendarWidget" name="calendarWidget"/>
     </item>
-    <item row="2" column="0">
+    <item row="2" column="0" colspan="2">
      <layout class="QHBoxLayout" name="horizontalLayout">
       <item>
        <spacer name="horizontalSpacer">
@@ -86,7 +117,7 @@
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>400</width>
+     <width>412</width>
      <height>23</height>
     </rect>
    </property>

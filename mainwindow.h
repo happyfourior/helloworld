@@ -21,6 +21,7 @@ public:
 private:
     Ui::MainWindow *ui;
     QTimer * timer;
+    QString path = "C:/Users/Administrator/Desktop/meinv/";
 };
 
 #endif // MAINWINDOW_H
